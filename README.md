@@ -7,6 +7,29 @@ was initially a port of a previous perl implementation. Its primary intention
 was to bring indented sass syntax support to [`libsass`](https://github.com/sass/libsass).
 `sass2scss` is included in `libsass` since [version 2.0](https://github.com/sass/libsass/releases/tag/v2.0).
 
+## Install
+
+First, download and compile the `sass2scss` binary:
+
+```sh
+wget https://github.com/mgreter/sass2scss/archive/v1.0.5.tar.gz
+tar zxf v1.0.5.tar.gz
+cd sass2scss-1.0.5/
+make
+```
+
+Then, add folder with the `sass2scss` binary to your `$PATH`:
+
+```sh
+export PATH=$PATH:/path/to/sass2scss-folder/
+```
+
+Or just move the `sass2scss` binary to place that already exists in `$PATH`:
+
+```sh
+[sudo] mv sass2scss /usr/local/bin/
+```
+
 ## Unit Tests
 
 I added around 60 unit tests for `sass2scss` to the `libsass` perl binding
